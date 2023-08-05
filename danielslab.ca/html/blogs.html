@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Lab</title>
+    <link rel="icon" type="image/x-icon" href="../assets/website_favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  
+  <body class="home">
+    <nav class="nav-bar">
+      <div>
+        <a href="#">
+          <img class="logo" src="../assets/website_logo_text_cropped.png" alt="logo">
+        </a>
+      </div>
+      <ul class="nav-list">
+        <li class="list-item">
+          <a style="--i:1" href="index.html">Home</a>
+        </li>
+        <li class="list-item">
+          <a class="current-page" style="--i:2" href="#">Blogs</a>
+        </li>
+        <li class="list-item">
+          <a style="--i:3" href="tbd1.html">TBD1</a>
+        </li>
+        <li class="list-item">
+          <a style="--i:4" href="tbd2.html">TBD2</a>
+        </li>
+        <li class="list-item">
+          <a style="--i:5" href="tbd3.html">TBD3</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="title">
+      <h1>Blogs</h1>
+    </div>
+
+    <div class="blogs">
+      <div class="blog1">
+        <h1 style="--a:1">
+          The Importance of Cryptography 
+        </h1>
+        <h1 style="--a:1">
+          in Today's World
+        </h1>
+        <h3 style="--a:2">
+          keywords: cryptography, encryption, decryption, privacy
+        </h3>
+        <img style="--a:3" src="../assets/blog1image.jpg" alt="blog1image">
+        <p style="--a:4">
+          What happens when you send an email or a message on facebook, instagram or any social media platform you use?
+          How do you know that the person you send the message to is the other one that can read it? In today's society 
+          data is constantly being sent back and forth between users and it is important that this data is protected in some 
+          way. So how is this done? Simply put our data is encrypted and once it is recieved by the user it is decrypted?
+          The process of this encryption and decryption that happens all the time falls in the field of cryptography. That being
+          a puzzle per say, one made using very complicated mathematical algorithms that make a simple message such as <q>hi</q>
+          look something like this: 67otkRjevhdexWDFZKslcg==. Now how does the other person that recieves this encrypted message
+          decrypt this message? Well, the system does that for us! Each sender and reciever both have a public and private key 
+          associated with where they are sending it from. The data is encrypted with the reciever's public key (think of this as
+          the email address you put in the <q>to:</q> box when you are picking the recipients. Under the hood this is specifying
+          a public key by which to encrypt the data with. After this when the user recieves the message the system attempts to decode
+          the message with their own private key (this is similar to a password you shouldn't share) thereby only allowing the recipient
+          the data is meant for to translate this data to be readable. Without this public and private key system of encrypting and
+          decrypting data any messages we send to our peers could easily be read by anyone and no one would have any privacy!   
+        </p>
+      </div>
+
+      <div class="blog2">
+        <h1 style="--b:1">
+          Your passwords could have stolen! How to minimize compromise of your information
+        </h1>
+        <h3 style="--b:2">
+          keywords: passwords, privacy, data breaches
+        </h3>
+        <img style="--b:3" src="../assets/blogs2image.jpg" alt="blogs2image">
+        <p style="--b:4">
+          Have you ever wondered why experts will always say to change your password every six monthes? Well, data breaches happen
+          quite often and people's information is spilled onto the web for anyone's taking all the time! A lot of these data breaches
+          are shared on the dark web where nefarious individuals can gain access to your accounts and potentially cause trouble for you.
+          You can go to <a href="https://haveibeenpwned.com/" target="_blank">haveibeenpwned.com</a> and see for yourself if your data was involved in a 
+          breach before and if so you better change your password. While we can't exactly stop these data breaches from happening there
+          are things you can do to make your password nearly impossible for a threat actor to discover with the current technology. First
+          off you should set up multifactor authentication also commonly called 2FA or two-factor authentication. With this system in place
+          not only would someone have to know your password but they would have to have access to your second source to log in. However, when
+          setting up this try to avoid setting up 2FA via phone number as SIM swapping by means of social engineering is fairly easy to do.
+          Next, you would want to set up a very strong password. One in which would take years for a hacker to get to. To do this make sure
+          the password has at least one upper case letter, one lower case letter, one symbol and one number and make sure the password is as 
+          long as possible. If you would like to see how secure a password is you can visit <a href="https://www.passwordmonster.com/" target="_blank">
+          www.passwordmonster.com</a> where you can see how long it would take for a threat actor to crack your password as well as a real-life
+          comparison to help you visualize it.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

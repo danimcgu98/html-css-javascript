@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://drive.google.com/uc?export=view&amp;id=1DLgYdie9tYSNjXN6e574UGu0COmxcCJa">
+    <title>New Tab</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+      * {
+        margin: 0 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto Slab', serif;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+
+      .row1, .row2, .row3 {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .row2 {
+        vertical-align: bottom;
+      }
+
+      .title {
+        margin-right: 35px;
+        margin-top: 8%;
+        font-size: 30px;
+        text-align: center;
+        color: burlywood;
+      }
+
+      .icon {
+        width: 80px;
+      }
+
+      .icon-title {
+        width: 80px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .link-container {
+        width: 80px;
+        display: inline-block;
+        margin-right: 35px;
+      }
+
+      .search-box {
+        border-radius: 10px;
+        margin-right: 35px;
+        margin-top: 40px;
+        text-align: center; 
+      }
+
+      .search-box input {
+        border-radius: 10px;
+        color: black;
+        background-color: transparent;
+      }
+
+      .search-btn {
+        margin-right: 35px;
+        margin-top: 15px;
+        text-align: center;
+        margin-bottom: -10px;
+      }
+
+      .search-btn button {
+        border-radius: 10px;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+      }
+    </style>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => 
+      {
+        let search_btn = document.querySelector('#s_btn');
+
+        document.getElementById("site-search")
+        .addEventListener('keyup', function(event) {
+        event.preventDefault();
+          if (event.keyCode === 13) {
+            document.getElementById('s_btn').click();
+          }
+        });
+
+        search_btn.addEventListener('click', function(){
+          let text = document.getElementById('site-search').value;
+          window.location.href = 'https://google.com/search?q=' + text;
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Daniel's Home Page</h1>
+    </div>
+    <div class="search-box">
+      <input type="search" id="site-search" placeholder="Search" name="q" style="font-size:55px">
+    </div>
+    <div class="search-btn">
+      <button id="s_btn">Search</button>
+    </div>
+    <div class="row1">
+      <a href="https://github.com/">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=18S0y3nKG9JcK4zcQ0BoUWUftBqxYTzVy" alt="github logo">
+          <p class="icon-title">github</p>
+        </div>
+      </a>
+      <a href="http://youtube.com">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1v-RkccX74HsCFIwe1gkRql-SBIgt2cxd" alt="youtube logo">
+          <p class="icon-title">youtube</p>
+        </div>
+      </a>
+      <a href="http://reddit.com">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1SYZgsn9o4jk6oclX7XgEHd654Xc71_d3" alt="reddit logo">
+          <p class="icon-title">reddit</p>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1qlftxhDeGZU2NNW0vOV9_og4NuZeJCk7" alt="linkedin logo">
+          <p class="icon-title">linkedin</p>
+        </div>
+      </a>
+      <a href="http://www.outlook.com">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1taJ4yVmLZTnAEEU8d_h4aHcsh12egh-M" alt="outlook logo">
+          <p class="icon-title">outlook</p>
+        </div>
+      </a>
+      <a href="https://mail.google.com/mail/u/0/#inbox">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1tNRL-AuzW8F8ODm4EXb1drrYX0L_VgCR" alt="gmail logo">
+          <p class="icon-title">gmail</p>
+        </div>
+      </a>
+    </div>
+    <div class="row2">
+      <a href="https://www.twitch.tv/">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1tef2fjYQb4iWOxVaDkZGDRx3IlYCZp7a" alt="twitch logo">
+          <p class="icon-title">twitch.tv</p>
+        </div>
+      </a>
+      <a href="https://drive.google.com/drive/my-drive">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1dGs3TeXbH9TETEtNIz11HEDaNL7-92o5" alt="google drive logo">
+          <p class="icon-title">google drive</p>
+        </div>
+      </a>
+      <a href="https://git.bootcampcontent.com/University-of-Toronto/UTOR-VIRT-CYBER-PT-03-2023-U-LOLC/-/tree/main/Class-B">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1V97vvLyNvkAbJT1rs-LrND6_q7-SCSpG" alt="gitlab logo">
+          <p class="icon-title">gitlab</p>
+        </div>
+      </a>
+      <a href="https://home.edx.org/">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export-view&id=1lzG_vjcRLW6-ov7LurFsiK5j1cBfn96M" alt="edx logo">
+          <p class="icon-title">edx</p>
+        </div>
+      </a>
+      <a href="https://danimcgu98-fluffy-halibut-qrwwr7p59qghxw7g.github.dev/?autoStart=true&folder=%2Fworkspaces%2F127244844&vscodeChannel=stable">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1eFqVLOmWTBpvUZ6JzM10OYBrrBOB9qxF" alt="codespace">
+          <p class="icon-title">codespace</p>
+        </div>
+      </a>
+      <a href="https://portal.azure.com/#home">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1TnP76fxeUuuFmrEgno1VdGwQTaE2qbhX" alt="azure logo">
+          <p class="icon-title">azure</p>
+        </div>
+      </a>
+    </div>
+    <div class="row3">
+      <a href="https://labs.azure.com/virtualmachines?feature_vnext=true">
+        <div class="link-container">
+          <img class="icon" src="https://drive.google.com/uc?export=view&id=1XhmvY42bpyf5aT6QNg2EV5FGpp2iEtwB" alt="azure labs">
+          <p class="icon-title">lab env.</p>
+        </div>
+      </a>
+      <div class="link-container">
+        <img class="icon" src="https://drive.google.com/uc?export=view&id=1ZZvpVY4Xqbu8NigjQsD0ExwE5wcPcMib" alt="N/A">
+        <p class="icon-title">tbd</p>
+      </div>
+      <div class="link-container">
+        <img class="icon" src="https://drive.google.com/uc?export=view&id=1ZZvpVY4Xqbu8NigjQsD0ExwE5wcPcMib" alt="N/A">
+        <p class="icon-title">tbd</p>
+      </div>
+      <div class="link-container">
+        <img class="icon" src="https://drive.google.com/uc?export=view&id=1ZZvpVY4Xqbu8NigjQsD0ExwE5wcPcMib" alt="N/A">
+        <p class="icon-title">tbd</p>
+      </div>
+      <div class="link-container">
+        <img class="icon" src="https://drive.google.com/uc?export=view&id=1ZZvpVY4Xqbu8NigjQsD0ExwE5wcPcMib" alt="N/A">
+        <p class="icon-title">tbd</p>
+      </div>
+      <div class="link-container">
+        <img class="icon" src="https://drive.google.com/uc?export=view&id=1ZZvpVY4Xqbu8NigjQsD0ExwE5wcPcMib" alt="N/A">
+        <p class="icon-title">tbd</p>
+      </div>
+    </div>
+  </body>
+</html>
